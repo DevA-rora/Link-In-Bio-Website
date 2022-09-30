@@ -1,27 +1,84 @@
-<doctype html>
-<html> 
-    <main> 
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(17, 56, 81);
+    color: #fff;
+}
 
-    <head> 
-        <meta charset="utf-8"/>
-        <title> Dev Arora - Links </title> 
+header {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
-        <header> 
-            <img height="300", width="100" src="./Images/Background-Photo.jpeg"/>
-            <h1> @devarora </h1>
-        </header>
 
-        <ul>
-            <li> <a href="https://www.devarora.com/"> <img src="./Images/home-image.svg" alt="YouTube" width="20"> Official Website </a> </li>
-            <li> <a href=""> <img src="./Images/youtube-image.svg" alt="YouTube" width="20"> Youtube </a> </li>
-            <li> <a href=""> <img src="./Images/twitter-image.svg" alt="Twitter" width="20"> Twitter </a> </li>
-            <li> <a href="https://github.com/DevA-rora?tab=repositories"> <img src="./Images/github-image.svg" alt="Github" width="20"> Github </a> </li>
+header > img {
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    border: 1px solid whitesmoke;
+    box-shadow: #5bced0 0px 2px 25px 5px;
+}
 
-        </ul>
-    </body>
+header > h1 {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: rgb(13, 13, 14);
+    color: rgb(168, 200, 255);
+    padding: 0.3em 1.6em;
+    border: 1px solid #fffa;
+}
 
-    </main>
-</html>
+
+h1 {
+    font-size: 20px;
+    color: rgb(168, 200, 255);
+    font-family: sans-serif;
+}
+
+body {
+    background: url(./Images/Background-Photo.jpeg) repeat center center fixed;
+    background-size: cover;
+}
+
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 2em;
+    align-items: center;
+
+    width: 450px; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+ul > li {
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%), contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    backdrop-filter: blur(10px);
+    border-radius: 10em;
+    padding: 1em;
+    margin: 1.4em 0;
+    box-shadow: #313434 0px 2px 20px 3px;
+    opacity: 0.9;
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
