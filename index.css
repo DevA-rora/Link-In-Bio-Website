@@ -46,6 +46,27 @@ body {
     background-size: cover;
 }
 
+
+/*
+The code below allows the video to take up the whole screen
+
+video {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+main {
+    position: relative;
+}
+*/
+
 ul {
     box-sizing: border-box;
     list-style: none;
