@@ -60,9 +60,24 @@ ul {
 
 ul > li {
     background-color: #fff;
+    backdrop-filter: blur(10px);
     border-radius: 10em;
     padding: 1em;
     margin: 1.4em 0;
     box-shadow: #313434 0px 2px 20px 3px;
     opacity: 0.7;
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    
 }
